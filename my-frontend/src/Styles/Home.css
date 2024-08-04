@@ -1,0 +1,125 @@
+.home {
+  background-color: #1e1e1e;
+  padding: 5rem 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.home-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem 4rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(255, 255, 255, 0.1);
+  max-width: 1200px;
+  margin: auto;
+  min-height: 375px;
+}
+
+.profile-photo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Added to center the image */
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  transition: all 0.3s ease;
+  background-color: #fff; /* Added background color */
+  border: 5px solid #d8c513; /* Added border */
+}
+
+.profile-photo:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.profile-photo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 50%;
+}
+
+.profile-photo:hover::before {
+  opacity: 1;
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%; /* Ensures the image inside is circular */
+}
+
+.home-content .text {
+  flex: 2;
+  padding-left: 2rem;
+  color: #fff;
+}
+
+.home-content .text h1 span {
+  color: #ffd700;
+  font-family: cursive;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.social-links a {
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ffd700;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #ffd700;
+  color: #1e1e1e;
+  padding: 0.75rem 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #686410;
+}
+
+@media (max-width: 768px) {
+  .home-content {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .profile-photo {
+    margin-bottom: 2rem;
+  }
+
+  .home-content .text {
+    padding-left: 0;
+    text-align: center;
+  }
+}

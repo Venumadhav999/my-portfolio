@@ -1,0 +1,95 @@
+.education-content {
+    background-color: #1f1e1e;
+    color: #e5e5e5;
+    padding: 4rem 0;
+  }
+  
+  .education-content .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .education-content .title {
+    color: #fed700;
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  .education-content .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .education, .internship {
+    flex: 0 0 48%;
+    max-width: 48%;
+    margin-top: 30px;
+  }
+  
+  .timeline-box {
+    width: 100%;
+  }
+  
+  .timeline {
+    padding: 30px 15px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .timeline-item {
+    position: relative;
+    padding-left: 37px;
+    padding-bottom: 50px;
+  }
+  
+  .timeline-item:last-child {
+    padding-bottom: 0;
+  }
+  
+  .timeline-item::before {
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: #fed700;
+    position: absolute;
+    left: 7px;
+    top: 0;
+  }
+  
+  .circle-dot {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #e5e5e5;
+  }
+  
+  .timeline-title {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  
+  .internship .timeline-title {
+    margin-bottom: 8px;
+  }
+  
+  .timeline-text {
+    line-height: 25px;
+    font-size: 16px;
+    text-align: justify;
+  }
+  
+  @media (max-width: 768px) {
+    .education, .internship {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  
